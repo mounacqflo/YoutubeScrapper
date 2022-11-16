@@ -7,8 +7,6 @@ source .venv/bin/activate
 
 pip install --upgrade pip
 
-python3 youtube_scrapper.py --input input.json --output output.json
-
 pip install bs4
 
 pip install selenium
@@ -17,8 +15,10 @@ pip install webdriver_manager
 
 pip install packaging
 
+python3 youtube_scrapper.py --input input.json --output output.json
+
 ## Tests
-py.test --cov=. test.py
+python3 -m pytest test.py
 
 ## Contributors
 Florian Mounacq, mounacqflo@cy-tech.fr
