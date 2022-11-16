@@ -18,6 +18,8 @@ pip install packaging
 python3 youtube_scrapper.py --input input.json --output output.json
 
 ## Tests
+pip install pytest-cov
+
 python3 -m pytest test.py
 
 ## Contributors
