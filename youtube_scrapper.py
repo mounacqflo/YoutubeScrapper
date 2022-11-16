@@ -32,7 +32,7 @@ class Scrapper:
         res = ''
         pouces_bleu = self.soup.find("button", {"class": "yt-spec-button-shape-next yt-spec-button-shape-next--tonal yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--segmented-start"})
         # re.findall takes in parameter a string containing int and return a table of these int -> ['17', '314']
-        tab = re.findall(r'\d+', pouces_bleu['aria-label'])
+        tab = re.findall('\d+', pouces_bleu['aria-label'])
         # concatenate tab elements
         for i in range(len(tab)):
             res += tab[i]
